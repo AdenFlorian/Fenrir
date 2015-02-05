@@ -219,8 +219,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 115442}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 550.70459, y: 11.9560318, z: -95.7583008}
+  m_LocalRotation: {x: -.122744143, y: -.239023104, z: -.0303482153, w: .962746501}
+  m_LocalPosition: {x: 82.7900009, y: 19.3409996, z: -86.6399994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 437602}
@@ -623,7 +623,7 @@ Light:
   m_Type: 2
   m_Color: {r: .972549021, g: .529411793, b: .243137255, a: 1}
   m_Intensity: .540000021
-  m_Range: 36.7400017
+  m_Range: 291.380005
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -675,7 +675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flickeringLightStyle: 0
-  campfireMethod: 2
+  campfireMethod: 0
   campfireIntesityStyle: 1
   campfireRangeStyle: 1
   CampfireIntensityBaseValue: .5

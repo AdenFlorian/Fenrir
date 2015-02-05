@@ -27,6 +27,9 @@
 [Aa]ssets/ShaderForge.meta
 [Aa]ssets/Vendor
 [Aa]ssets/Vendor.meta
+[Aa]ssets/Plugins/*
+[Aa]ssets/Plugins
+[Aa]ssets/Plugins.meta
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt 
@@ -62,3 +65,4 @@ obj/
 .Trashes
 ehthumbs.db
 Thumbs.db
+Assets/Plugins/

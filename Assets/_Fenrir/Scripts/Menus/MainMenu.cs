@@ -6,7 +6,6 @@ public class MainMenu : MonoBehaviour {
 	Animator animator;
 
 	void Awake () {
-		gameObject.SetActive(false);
 	}
 
 	void Start () {
