@@ -6,6 +6,7 @@ public class CampFire : Actor {
 	public bool isLit = false;
 	public GameObject fx;
 	public ParticleSystem[] particleSystems;
+	public int switchedNumTimes = 0;
 
 	void Awake () {
 	}
@@ -27,6 +28,12 @@ public class CampFire : Actor {
 			Deactivate();
 		} else {
 			Activate();
+		}
+		switchedNumTimes++;
+		if (switchedNumTimes == 6) {
+			GameJoltAPIManager.Inst.AwardTrophy(GJTrophyEx.StartFire);
+		} else if (switchedNumTimes == 1) {
+			UnityAnalyticsIntegration.Inst.SwitchedFire();
 		}
 	}
 
