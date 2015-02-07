@@ -1,18 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Interactor : MonoBehaviour {
+public class Interactor : ActorComponent {
 
 	public float rayLength = 3.5f;
 	Actor focusedObject;
-
-	void Awake () {
-	
-	}
-	
-	void Start () {
-	
-	}
 	
 	void Update () {
 		Ray ray = new Ray(transform.position, transform.forward);

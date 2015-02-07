@@ -69,6 +69,7 @@ GameObject:
   - 114: {fileID: 11429788}
   - 114: {fileID: 11429786}
   - 114: {fileID: 11429784}
+  - 114: {fileID: 11470332}
   m_Layer: 0
   m_Name: PlayerCapsule
   m_TagString: Untagged
@@ -565,6 +566,17 @@ MonoBehaviour:
   blurAndFlaresShader: {fileID: 4800000, guid: be6e39cf196f146d5be72fbefb18ed75, type: 3}
   brightPassFilterShader: {fileID: 4800000, guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c,
     type: 3}
+--- !u!114 &11470332
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3176c88c401ebe4986c590ec5bfd751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11485192
 MonoBehaviour:
   m_ObjectHideFlags: 1

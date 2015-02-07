@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Planet : MonoBehaviour {
-
-	public float gravityAcceleration = 5f;
+public class FenrirPlayer : Actor {
 
 	void Awake () {
 	

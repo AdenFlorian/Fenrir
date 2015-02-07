@@ -15,8 +15,11 @@ using UnityEngine;
 /// </summary>
 public class ActionMaster : MonoBehaviour {
 
+	public static ActionMaster Inst;
 	public string relativeCfgFilePath = @"Config/KeyBindings.txt";
 	public bool overwriteConfigFile = false;
+	[Range(0,10)]
+	public float axisSensitivity = 1f;
 
 	private string configPath;
 
@@ -27,6 +30,7 @@ public class ActionMaster : MonoBehaviour {
 
 	/// <param name="relativeCfgFilePath">Path to keybindings config file relative to Application.dataPath (Assets folder)</param>
 	void Awake() {
+		Inst = this;
 		configPath = Application.dataPath + "/" + relativeCfgFilePath;
 		Init();
 	}
@@ -274,9 +278,9 @@ public class ActionMaster : MonoBehaviour {
 	public static float GetAxis(AxisCode axisCode) {
 		switch (axisCode) {
 			case AxisCode.LookHorizontal:
-				return Input.GetAxis("Mouse X");
+				return Input.GetAxis("Mouse X") * Inst.axisSensitivity;
 			case AxisCode.LookVertical:
-				return Input.GetAxis("Mouse Y");
+				return -Input.GetAxis("Mouse Y") * Inst.axisSensitivity;
 			default:
 				throw new NotImplementedException(
 					"No case defined for " + axisCode + " in " +
