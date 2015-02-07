@@ -120,6 +120,11 @@ public class ActionMaster : MonoBehaviour {
 		keyCodesFor[ActionCode.TurnLeft].Add(KeyCodeExt.LeftArrow);
 		keyCodesFor[ActionCode.TurnRight].Add(KeyCodeExt.D);
 		keyCodesFor[ActionCode.TurnRight].Add(KeyCodeExt.RightArrow);
+		keyCodesFor[ActionCode.StrafeLeft].Add(KeyCodeExt.A);
+		keyCodesFor[ActionCode.StrafeLeft].Add(KeyCodeExt.LeftArrow);
+		keyCodesFor[ActionCode.StrafeRight].Add(KeyCodeExt.D);
+		keyCodesFor[ActionCode.StrafeRight].Add(KeyCodeExt.RightArrow);
+		keyCodesFor[ActionCode.Jump].Add(KeyCodeExt.Space);
 
 		// Interaction
 		keyCodesFor[ActionCode.Interact].Add(KeyCodeExt.E);
@@ -289,9 +294,12 @@ public enum ActionCode {
 	MoveBackward,
 	TurnLeft,
 	TurnRight,
+	StrafeLeft,
+	StrafeRight,
 	PrimaryFire,
 	SecondaryFire,
-	Interact
+	Interact,
+	Jump
 }
 
 public enum AxisCode {

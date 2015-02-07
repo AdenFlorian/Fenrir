@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 474464}
   - 108: {fileID: 10874466}
   m_Layer: 0
-  m_Name: Directional light
+  m_Name: moonDLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ GameObject:
   - 4: {fileID: 474466}
   - 108: {fileID: 10874468}
   m_Layer: 0
-  m_Name: Directional light
+  m_Name: sunDLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,7 +53,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174464}
-  m_LocalRotation: {x: -.149107993, y: .624732196, z: -.123133846, w: -.756514728}
+  m_LocalRotation: {x: .191463277, y: .137733027, z: -.0271469858, w: .971408546}
   m_LocalPosition: {x: 0, y: 1000, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -65,7 +65,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174466}
-  m_LocalRotation: {x: .152153924, y: .138715267, z: -.0215733405, w: .978336275}
+  m_LocalRotation: {x: .152153909, y: .138715282, z: -.0215734337, w: .978336275}
   m_LocalPosition: {x: 0, y: 1000, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -78,7 +78,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1529.99536, y: -21.5039673, z: -1200.46826}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 474464}
@@ -100,16 +100,16 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_Strength: 1
-    m_Bias: .0500000007
+    m_Bias: .356999993
     m_Softness: 4
     m_SoftnessFade: 1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
+  m_Flare: {fileID: 12100000, guid: 3ca3d4e332e9641439d689a9005a1813, type: 2}
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
@@ -129,8 +129,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 1
-  m_Color: {r: .792156875, g: .97647059, b: .949019611, a: 1}
-  m_Intensity: .349999994
+  m_Color: {r: .963235319, g: .954483628, b: .91365701, a: 1}
+  m_Intensity: .400000006
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -144,7 +144,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 1
   m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
+  m_Flare: {fileID: 12100000, guid: 09ebe82dbd1113c3d000dc0b8d76c639, type: 2}
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
