@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[ExecuteInEditMode]
 public class DebugUI : MonoBehaviour {
 
 	public static DebugUI Inst;
 	public UnityEngine.UI.Text uiText;
-	public bool display = false;
+	public static bool display = false;
+	public static string uiTextStr;
 
 	void Awake () {
 		Inst = this;
@@ -19,12 +21,16 @@ public class DebugUI : MonoBehaviour {
 	}
 
 	void Update() {
-		uiText.text = "";
+		uiTextStr = "";
 	}
 
-	public void AddLine(string line) {
+	void LateUpdate() {
+		uiText.text = uiTextStr;
+	}
+
+	public static void AddLine(string line) {
 		if (display) {
-			uiText.text += line + "\n";
+			uiTextStr += line + "\n";
 	    }
 	}
 }

@@ -141,9 +141,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'DebugUI
-
-    AdenFlorian'
+  m_Text: DebugUI
 --- !u!114 &11488278
 MonoBehaviour:
   m_ObjectHideFlags: 1

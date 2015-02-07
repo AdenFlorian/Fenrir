@@ -39,8 +39,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b2e247019f004429a36b47c2a2dc88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeOfDay: .179000005
+  dayLength: 360
   sunDLight: {fileID: 0}
   moonDLight: {fileID: 0}
+  sunIntensity: .540000021
+  moonIntensity: .0299999993
+  daySkyColor: {r: .882352948, g: .687716246, b: .395761251, a: 0}
+  nightSkyColor: {r: .0611628927, g: .058336921, b: .0955882072, a: 0}
+  dayAtmosColor: {r: .838235259, g: .698387682, b: .548551023, a: 0}
+  nightAtmosColor: {r: .117647059, g: .120740362, b: .125, a: 0}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .199999988
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .399999976
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .5
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .599999964
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .799999952
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  skyAtmosRenderer: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
