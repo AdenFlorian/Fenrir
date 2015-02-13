@@ -2303,7 +2303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &523185925
 Transform:
   m_ObjectHideFlags: 0
@@ -3809,6 +3809,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 299516718}
+    - target: {fileID: 113308, guid: 33f80399a39abb341966ad6764e9b82c, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 33f80399a39abb341966ad6764e9b82c, type: 2}
   m_RootGameObject: {fileID: 2072659611}
@@ -5026,7 +5030,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: DebugUI
 --- !u!222 &1009810382
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6515,6 +6519,10 @@ Prefab:
     - target: {fileID: 479976, guid: f079258901f64044f92615e584b85376, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 179978, guid: f079258901f64044f92615e584b85376, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f079258901f64044f92615e584b85376, type: 2}
@@ -10326,7 +10334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2072659612
 Transform:
   m_ObjectHideFlags: 0
